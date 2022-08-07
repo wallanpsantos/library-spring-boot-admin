@@ -1,0 +1,13 @@
+server:
+    port: 8081
+spring:
+    application:
+        name: library-spring-boot-admin
+management:
+    endpoints:
+        jmx:
+            exposure:
+                include: health,info,env,beans
+        web:
+            exposure:
+                include: health,info,env,beans
